@@ -11,3 +11,4 @@
 # This is a comment. It will not be executed.
 
 # 20-05-2025
+# It runs commands line by line. Each line contains a single instruction.
