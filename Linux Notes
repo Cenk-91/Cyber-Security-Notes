@@ -12,3 +12,6 @@ There are more than 600 distributions on Linux.
 
 20-05-2025
 You can use the 'man' command in the terminal to view a command's manual.
+
+21-05-2015
+In Linux, commands are case-sensitive. For example, ls and LS are different — LS will not work.
