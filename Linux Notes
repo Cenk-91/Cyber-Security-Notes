@@ -15,3 +15,7 @@ You can use the 'man' command in the terminal to view a command's manual.
 
 21-05-2015
 In Linux, commands are case-sensitive. For example, ls and LS are different — LS will not work.
+
+22-05-2025
+ls -l shows files and folders in long list format with details like permissions, owner, size, and date.
+-------------------------------------------------------
