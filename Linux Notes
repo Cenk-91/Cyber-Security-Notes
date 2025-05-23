@@ -11,11 +11,14 @@ It was inspired by Unix -1970s, AT&T Bell Labs- but built from scratch without u
 There are more than 600 distributions on Linux.
 
 20-05-2025
-You can use the 'man' command in the terminal to view a command's manual.
+You can use the "man" command in the terminal to view a command's manual.
 
 21-05-2015
 In Linux, commands are case-sensitive. For example, ls and LS are different — LS will not work.
 
 22-05-2025
-ls -l shows files and folders in long list format with details like permissions, owner, size, and date.
+"ls -l" shows files and folders in long list format with details like permissions, owner, size, and date.
 -------------------------------------------------------
+23-05-2025
+"command --help" / "help command (bash)" displays a quick help summary for the command. Shows available options and syntax.
+"pwd" Print Working Directory - Prints the current working directory. It tells you where you are in the filesystem.
