@@ -15,12 +15,14 @@ WHAT THEY DO :
 -  Documenting and managing assets: We need to know the systems and devices we must manage and protect adequately.
 -  Updating and patching systems: Ensuring that computers, servers, and network devices are correctly updated and 
 patched against any known vulnerability.
--  Setting up preventative security devices: Firewall and intrusion prevention systems (IPS) are critical components of preventative security. 
+-  Setting up preventative security devices: Firewall and intrusion prevention systems (IPS) are critical components of 
+preventative security. 
 Firewalls control what network traffic can go inside and what can leave the system or network. 
 IPS blocks any network traffic that matches present rules and attack signatures.
 -  Setting up logging and monitoring devices: Proper network logging and monitoring are essential for detecting malicious activities and 
 intrusions. If a new unauthorized device appears on our network, we should be able to detect it.
-A SECURITY OPERATIONS CENTER (SOC) is a team of cyber security professionals that monitors the network and its systems to detect malicious cyber security events.
+A SECURITY OPERATIONS CENTER (SOC) is a team of cyber security professionals that monitors the network and its systems to detect
+malicious cyber security events.
 Vulnerabilities - Policy Violations - Unauthorized Activity - Network Intrusions
 Threat Intelligence
 Digital Forensics and Incident Response (DFIR)
