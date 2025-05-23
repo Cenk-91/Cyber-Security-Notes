@@ -26,8 +26,9 @@ Threat Intelligence
 Digital Forensics and Incident Response (DFIR)
 Digital Forensics > File System - System memory - System logs - Network logs
 Incident Response > Preparation - Detection and Analysis - Containment, Eradication, and Recovery - Post-Incident Activity
-Malware Analysis > 
-
+Malware Analysis > Virus - Trojan Horse - Ransomware > Static Analysis - Dynamic Analysis
+Security Information and Event Management (SIEM)
+IP Scanners!(AbuseIPDB, Cisco Talos Intelligence)
 
 
 
