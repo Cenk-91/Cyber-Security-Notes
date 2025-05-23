@@ -22,3 +22,29 @@ print(123)
 # 22-05-2025
 # A string is text in Python. It must be inside quotes: "hello" or 'hello'.
 -------------------------------------------------------
+# 23-05-2025
+# The type() function returns the data type (class) of the given value.
+print(type("cenk"))      # <class 'str'>
+print(type(42))          # <class 'int'>
+# An int (integer) represents whole numbers (positive, negative, or zero) in Python.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
