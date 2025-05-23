@@ -1,10 +1,55 @@
 23-05-2025
 
-Offensive
+OFFENSIVE
 Gobuster
 HTTP Status Codes (MDN Web Docs)
 Reconnaissance (Recon)
 Recon is the first phase of ethical hacking, focused on gathering as much information about the target as possible.
 
-Defensive
+DEFENSIVE
+To exploit: To take advantage of a vulnerability in a system to perform unauthorized actions.
+1-Preventing intrusions from occurring
+2-Detecting intrusions when they occur and responding properly
+WHAT THEY DO : 
+-  User cyber security awareness: Training users about cyber security helps protect against attacks targeting their systems.
+-  Documenting and managing assets: We need to know the systems and devices we must manage and protect adequately.
+-  Updating and patching systems: Ensuring that computers, servers, and network devices are correctly updated and 
+patched against any known vulnerability.
+-  Setting up preventative security devices: Firewall and intrusion prevention systems (IPS) are critical components of preventative security. 
+Firewalls control what network traffic can go inside and what can leave the system or network. 
+IPS blocks any network traffic that matches present rules and attack signatures.
+-  Setting up logging and monitoring devices: Proper network logging and monitoring are essential for detecting malicious activities and 
+intrusions. If a new unauthorized device appears on our network, we should be able to detect it.
+A SECURITY OPERATIONS CENTER (SOC) is a team of cyber security professionals that monitors the network and its systems to detect malicious cyber security events.
+Vulnerabilities - Policy Violations - Unauthorized Activity - Network Intrusions
+Threat Intelligence
+Digital Forensics and Incident Response (DFIR)
+Digital Forensics > File System - System memory - System logs - Network logs
+Incident Response > Preparation - Detection and Analysis - Containment, Eradication, and Recovery - Post-Incident Activity
+Malware Analysis > 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
