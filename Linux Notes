@@ -22,3 +22,19 @@ In Linux, commands are case-sensitive. For example, ls and LS are different — 
 23-05-2025
 "command --help" / "help command (bash)" displays a quick help summary for the command. Shows available options and syntax.
 "pwd" Print Working Directory - Prints the current working directory. It tells you where you are in the filesystem.
+
+24-05-2025
+"mkdir ..." is used to create a new directory (folder). (make directory)
+"rmdir ..." is used to remove an empty directory. Gives error if the directory contains files. (remove directory)
+
+
+
+
+
+
+
+
+
+
+
+
