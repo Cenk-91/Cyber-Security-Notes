@@ -28,6 +28,15 @@ print(type("cenk"))      # <class 'str'>
 print(type(42))          # <class 'int'>
 # An int (integer) represents whole numbers (positive, negative, or zero) in Python.
 
+# 24-05-2025
+# A float represents decimal (floating point) numbers in Python.
+boy = 1.75
+print(type(boy))  # <class 'float'>
+# A bool represents logical values: True or False. (Boolean data type)
+hava_gunesli = True # Capital Letter
+sigara_icti_mi = False # Capital Letter
+print(type(hava_gunesli))   # <class 'bool'>
+
 
 
 
