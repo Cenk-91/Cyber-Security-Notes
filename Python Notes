@@ -37,9 +37,14 @@ hava_gunesli = True # Capital Letter
 sigara_icti_mi = False # Capital Letter
 print(type(hava_gunesli))   # <class 'bool'>
 
-
-
-
+# 25-05-2025
+# A list is an ordered collection of items. Lists are mutable (you can change their content after creation).
+my_list = [1, 2, 3]
+my_list[0] = 10
+print(my_list)  # Output: [10, 2, 3]
+# A tuple is an ordered collection of items like a list, but it is immutable (you cannot change its content).
+my_tuple = (1, 2, 3)
+print(my_tuple[1])  # Output: 2
 
 
 
