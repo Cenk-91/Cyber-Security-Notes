@@ -32,11 +32,28 @@ Security Information and Event Management (SIEM)
 IP Scanners!(AbuseIPDB, Cisco Talos Intelligence)
 
 24-05-2025
-Networking : It is the practice of connecting computers and other devices together to share data and resources.
-The Internet is a global network of networks that allows computers and devices around the world to communicate and share data.
-The ARPANET project in the late 1960s - Tim Berners-Lee / The creation of the World Wide Web 1989
+  Networking : It is the practice of connecting computers and other devices together to share data and resources.
+  The Internet is a global network of networks that allows computers and devices around the world to communicate and share data.
+  The ARPANET project in the late 1960s - Tim Berners-Lee / The creation of the World Wide Web 1989
+  An IP address (Internet Protocol address) is a unique number assigned to every device connected to a network. It allows devices 
+to identify and communicate with each other.
+  Private IP	Used within local networks (e.g. 192.168.x.x, 10.x.x.x). Not accessible from the internet.
+  Public IP	Used on the internet. Assigned by the ISP to identify the network externally.
+  Public IPv4: 86.157.52.21  
+  Public IPv6: 2a00:22c4:a531:c500:425f:cce6:c36b:f64d
+  MAC (Media Access Control) address is a 12-digit hexadecimal number assigned to each network interface card.
+  Format: aa:bb:cc:dd:ee:ff
+  First 6 digits = manufacturer (e.g., Intel)
+  Last 6 digits = unique to the device
+  MAC Spoofing 
+- Faking a device’s MAC address to pretend to be another device.  
+- Used to bypass MAC filters (e.g., in firewalls, cafes, captive portals).
+  - ip a
+  - ipconfig /all
+  Ping - ICMP (Internet Control Message Protocol)
 
-
+25-05-2025
+  
 
 
 
