@@ -33,6 +33,11 @@ The "cd" command is used to change the current directory in the terminal. It sta
   cd ..   # Goes one directory up
   cd ~    # Goes to the home directory
 
+26-05-2025
+The "touch" command creates a new empty file. If the file already exists, it updates its timestamp.
+  touch filename.txt
+The "mv" command renames a file if the destination is a new name and moves a file if the destination is a folder.
+  mv eski_ad.txt yeni_ad.txt | mv belge.txt /home/cenk/Documents/ | mv belge.txt /home/cenk/Documents/yeni_ad.txt
 
 
 
