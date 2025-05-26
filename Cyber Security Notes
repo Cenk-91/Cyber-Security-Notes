@@ -54,16 +54,37 @@ to identify and communicate with each other.
 
 25-05-2025
   Local Area Network (LAN)
-  Star Topology
+  Star Topology : All devices (computers, phones, etc.) are individually connected to a central networking device — usually a switch or hub.
+All communication between devices goes through this central device.
+  Bus Topology : This type of connection relies upon a single connection which is known as a backbone cable.
+  The Ring Topology (also known as token topology) : Devices such as computers are connected directly to each other to form a loop.
+  Switches are dedicated devices within a network that are designed to aggregate multiple other devices such as computers, printers, 
+or any other networking-capable device using ethernet. 
+  Router : It's a router's job to connect networks and pass data between them.
+  Subnetting means splitting a large network into smaller sections (called subnets).
+  What is a Subnet Mask? It shows which part of the IP address is for the network and which is for devices (hosts).
+Examples: /24 = 255.255.255.0 = allows 254 usable devices - /16 = 255.255.0.0 = allows 65,534 usable devices
+  Network Address
+     Identifies the whole network
+     Cannot be assigned to a device
+     Like the apartment building’s address
+     Example: 192.168.1.0
+  Host Address
+     Assigned to a specific device (computer, phone, etc.)
+     Like a flat number in the building
+     Examples: 192.168.1.10, 192.168.1.42, 192.168.1.100
+  Default Gateway (ip route)
+     Used to exit the network (to access the internet)
+     Like the main door of the building
+     Often: 192.168.1.1 or 192.168.1.254
+  ARP is used to map an IP address to a MAC address in a local network. (arp -a)
+It helps devices find out "Who has this IP address?" and get the corresponding MAC address.
+ARP Request > ARP Reply > Caching
+  DHCP – Dynamic Host Configuration Protocol - DHCP Discover > DHCP Offer > DHCP Request > DHCP ACK
+  DNS – Domain Name System - DNS translates domain names into IP addresses.
+
+26-05-2025
   
-
-
-
-
-
-
-
-
 
 
 
