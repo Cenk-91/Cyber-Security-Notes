@@ -53,6 +53,8 @@ to identify and communicate with each other.
   Ping - ICMP (Internet Control Message Protocol)
 
 25-05-2025
+## Local Area Network (LAN)
+**Star Topology**
   
 
 
