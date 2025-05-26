@@ -46,7 +46,22 @@ print(my_list)  # Output: [10, 2, 3]
 my_tuple = (1, 2, 3)
 print(my_tuple[1])  # Output: 2
 
-
+# 26-05-2025
+# len () fuction returns the number of items in a sequence or collection. It works with: strings, lists, tuples, dictionaries, etc.
+len("Cenk")             # 4
+len([1, 2, 3])          # 3
+len((True, False))      # 2
+len({"a": 1, "b": 2})   # 2
+# dict - A dictionary stores key-value pairs. Keys must be unique. Values can be any type.
+person = {
+    "name": "Cenk",
+    "age": 33,
+    "city": "Ankara"
+}
+print(person["name"])      # Output: Cenk
+person.keys()      # Tüm anahtarları döndürür
+person.values()    # Tüm değerleri döndürür
+person.items()     # (anahtar, değer) çiftlerini döndürür
 
 
 
