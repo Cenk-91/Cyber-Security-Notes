@@ -1,57 +1,73 @@
-# 16-05-2025
+######### 16-05-2025
+
 # It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation.
 
-# 17-05-2025
+######### 17-05-2025
+
 # It is written in the C programming language.
 
-# 18-05-2025
+######### 18-05-2025
+
 # The name was inspired by the British comedy group Monty Python.
 
-# 19-05-2025
+######### 19-05-2025
+
 # This is a comment. It will not be executed.
 
-# 20-05-2025
+######### 20-05-2025
+
 # It runs commands line by line. Each line contains a single instruction.
 
-# 21-05-2025
+######### 21-05-2025
+
 # The print() function is used to display text or values on the screen.
-# Example:
 print("Hello, World!")
 print(123)
 
-# 22-05-2025
+######### 22-05-2025
+
 # A string is text in Python. It must be inside quotes: "hello" or 'hello'.
+
 -------------------------------------------------------
-# 23-05-2025
+
+######### 23-05-2025
+
 # The type() function returns the data type (class) of the given value.
 print(type("cenk"))      # <class 'str'>
 print(type(42))          # <class 'int'>
+
 # An int (integer) represents whole numbers (positive, negative, or zero) in Python.
 
-# 24-05-2025
+######### 24-05-2025
+
 # A float represents decimal (floating point) numbers in Python.
 boy = 1.75
 print(type(boy))  # <class 'float'>
+
 # A bool represents logical values: True or False. (Boolean data type)
 hava_gunesli = True # Capital Letter
 sigara_icti_mi = False # Capital Letter
 print(type(hava_gunesli))   # <class 'bool'>
 
-# 25-05-2025
+######### 25-05-2025
+
 # A list is an ordered collection of items. Lists are mutable (you can change their content after creation).
 my_list = [1, 2, 3]
 my_list[0] = 10
 print(my_list)  # Output: [10, 2, 3]
+
 # A tuple is an ordered collection of items like a list, but it is immutable (you cannot change its content).
 my_tuple = (1, 2, 3)
 print(my_tuple[1])  # Output: 2
 
-# 26-05-2025
+######### 26-05-2025
+
 # len () fuction returns the number of items in a sequence or collection. It works with: strings, lists, tuples, dictionaries, etc.
 len("Cenk")             # 4
 len([1, 2, 3])          # 3
 len((True, False))      # 2
 len({"a": 1, "b": 2})   # 2
+
 # dict - A dictionary stores key-value pairs. Keys must be unique. Values can be any type.
 person = {
     "name": "Cenk",
@@ -63,7 +79,14 @@ person.keys()      # Tüm anahtarları döndürür
 person.values()    # Tüm değerleri döndürür
 person.items()     # (anahtar, değer) çiftlerini döndürür
 
+######### 27-05-2025
 
+# A variable is used to store data. Python doesn’t require you to declare the type.
+name = "Cenk" stores a string.
+
+# input("message") displays a prompt and waits for user input. The result is always a string. Use int(), float() etc. to convert if needed.
+name = input("What's your name? ")
+print("Hey", name)
 
 
 
