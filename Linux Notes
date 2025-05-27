@@ -39,6 +39,11 @@ The "touch" command creates a new empty file. If the file already exists, it upd
 The "mv" command renames a file if the destination is a new name and moves a file if the destination is a folder.
   mv eski_ad.txt yeni_ad.txt | mv belge.txt /home/cenk/Documents/ | mv belge.txt /home/cenk/Documents/yeni_ad.txt
 
+27-05-2025
+The "netstat" command shows current network connections, listening ports, routing tables, and interface statistics.
+Example: netstat -tuln shows all TCP/UDP ports that are open for listening.
+The "whoami" command prints the username of the current user.
+Useful to verify if you have root privileges or are in a standard session.
 
 
 
