@@ -245,7 +245,14 @@ SMB (Server Message Block)	445	File and printer sharing across a network
 RDP (Remote Desktop Protocol)	3389	Remote desktop access with GUI
   Ports 0–1023 are known as common ports or well-known ports.
   Services can use non-standard ports (e.g., HTTP on port 8080), but must be specified like http://example.com:8080.
-  
+
+    IP + Port = full address for a specific task on a specific machine.
+Example:
+    142.250.185.14:80 → Connects to Google’s web server (HTTP)
+    142.250.185.14:22 → Connects to Google’s SSH service (if allowed)
+Summary:
+    Ports are like the service-specific addresses attached to an IP.
+    Without knowing the correct port, the device won’t know which application should handle your request.
 
 
 
