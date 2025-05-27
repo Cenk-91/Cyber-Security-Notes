@@ -1,47 +1,66 @@
-16-05-2025
+######### 16-05-2025
+
 Linux began in 1991 as a personal project by Finnish student Linus Torvalds to create a new free operating system kernel.
 
-17-05-2025
+######### 17-05-2025
+
 It is written in the C programming language.
 
-18-05-2025
+######### 18-05-2025
+
 It was inspired by Unix -1970s, AT&T Bell Labs- but built from scratch without using Unix code.
 
-19-05-2025
+######### 19-05-2025
+
 There are more than 600 distributions on Linux.
 
-20-05-2025
+######### 20-05-2025
+
 You can use the "man" command in the terminal to view a command's manual.
 
-21-05-2015
+######### 21-05-2015
+
 In Linux, commands are case-sensitive. For example, ls and LS are different — LS will not work.
 
-22-05-2025
+######### 22-05-2025
+
 "ls -l" shows files and folders in long list format with details like permissions, owner, size, and date.
+
 -------------------------------------------------------
-23-05-2025
+
+######### 23-05-2025
+
 "command --help" / "help command (bash)" displays a quick help summary for the command. Shows available options and syntax.
+
 "pwd" Print Working Directory - Prints the current working directory. It tells you where you are in the filesystem.
 
-24-05-2025
+######### 24-05-2025
+
 "mkdir ..." is used to create a new directory (folder). (make directory)
+
 "rmdir ..." is used to remove an empty directory. Gives error if the directory contains files. (remove directory)
 
-25-05-2025
+######### 25-05-2025
+
 The "rm -r" command deletes a directory and its contents recursively.
+
 The "cd" command is used to change the current directory in the terminal. It stands for "change directory".
   cd ..   # Goes one directory up
   cd ~    # Goes to the home directory
 
-26-05-2025
+######### 26-05-2025
+
 The "touch" command creates a new empty file. If the file already exists, it updates its timestamp.
   touch filename.txt
+
 The "mv" command renames a file if the destination is a new name and moves a file if the destination is a folder.
   mv eski_ad.txt yeni_ad.txt | mv belge.txt /home/cenk/Documents/ | mv belge.txt /home/cenk/Documents/yeni_ad.txt
 
-27-05-2025
+######### 27-05-2025
+
 The "netstat" command shows current network connections, listening ports, routing tables, and interface statistics.
 Example: netstat -tuln shows all TCP/UDP ports that are open for listening.
+
 The "whoami" command prints the username of the current user.
 Useful to verify if you have root privileges or are in a standard session.
 
