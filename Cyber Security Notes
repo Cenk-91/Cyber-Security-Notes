@@ -1,69 +1,94 @@
-23-05-2025
-OFFENSIVE
-Gobuster
-HTTP Status Codes (MDN Web Docs)
-Reconnaissance (Recon)
+######### 23-05-2025
+
+  OFFENSIVE
+
+  Gobuster : Gobuster is a tool used to discover hidden directories,
+files, or subdomains on a website by brute-forcing URL paths or DNS entries using a wordlist.
+
+  HTTP Status Codes (MDN Web Docs)
+
+  Reconnaissance (Recon)
 Recon is the first phase of ethical hacking, focused on gathering as much information about the target as possible.
 
-DEFENSIVE
-To exploit: To take advantage of a vulnerability in a system to perform unauthorized actions.
-1-Preventing intrusions from occurring
-2-Detecting intrusions when they occur and responding properly
-WHAT THEY DO : 
+  DEFENSIVE
+
+  To exploit: To take advantage of a vulnerability in a system to perform unauthorized actions.
+
+  1-Preventing intrusions from occurring
+
+  2-Detecting intrusions when they occur and responding properly
+
+  WHAT THEY DO : 
 -  User cyber security awareness: Training users about cyber security helps protect against attacks targeting their systems.
 -  Documenting and managing assets: We need to know the systems and devices we must manage and protect adequately.
 -  Updating and patching systems: Ensuring that computers, servers, and network devices are correctly updated and 
 patched against any known vulnerability.
 -  Setting up preventative security devices: Firewall and intrusion prevention systems (IPS) are critical components of 
-preventative security. 
-Firewalls control what network traffic can go inside and what can leave the system or network. 
+preventative security. Firewalls control what network traffic can go inside and what can leave the system or network. 
 IPS blocks any network traffic that matches present rules and attack signatures.
 -  Setting up logging and monitoring devices: Proper network logging and monitoring are essential for detecting malicious activities and 
 intrusions. If a new unauthorized device appears on our network, we should be able to detect it.
+
 A SECURITY OPERATIONS CENTER (SOC) is a team of cyber security professionals that monitors the network and its systems to detect
-malicious cyber security events.
-Vulnerabilities - Policy Violations - Unauthorized Activity - Network Intrusions
+malicious cyber security events. Vulnerabilities - Policy Violations - Unauthorized Activity - Network Intrusions
+
 Threat Intelligence
+
 Digital Forensics and Incident Response (DFIR)
 Digital Forensics > File System - System memory - System logs - Network logs
+
 Incident Response > Preparation - Detection and Analysis - Containment, Eradication, and Recovery - Post-Incident Activity
+
 Malware Analysis > Virus - Trojan Horse - Ransomware > Static Analysis - Dynamic Analysis
+
 Security Information and Event Management (SIEM)
+
 IP Scanners!(AbuseIPDB, Cisco Talos Intelligence)
 
-24-05-2025
+######### 24-05-2025
+
   Networking : It is the practice of connecting computers and other devices together to share data and resources.
+
   The Internet is a global network of networks that allows computers and devices around the world to communicate and share data.
+
   The ARPANET project in the late 1960s - Tim Berners-Lee / The creation of the World Wide Web 1989
+
   An IP address (Internet Protocol address) is a unique number assigned to every device connected to a network. It allows devices 
 to identify and communicate with each other.
   Private IP	Used within local networks (e.g. 192.168.x.x, 10.x.x.x). Not accessible from the internet.
   Public IP	Used on the internet. Assigned by the ISP to identify the network externally.
   Public IPv4: 86.157.52.21  
   Public IPv6: 2a00:22c4:a531:c500:425f:cce6:c36b:f64d
+
   MAC (Media Access Control) address is a 12-digit hexadecimal number assigned to each network interface card.
   Format: aa:bb:cc:dd:ee:ff
   First 6 digits = manufacturer (e.g., Intel)
   Last 6 digits = unique to the device
+
   MAC Spoofing 
 - Faking a device’s MAC address to pretend to be another device.  
 - Used to bypass MAC filters (e.g., in firewalls, cafes, captive portals).
   - ip a
   - ipconfig /all
-  Ping - ICMP (Internet Control Message Protocol)
+  Ping - ICMP (Internet Control Message Protocol) : ICMP is a protocol used to send control and error messages in a network.
 
-25-05-2025
+######### 25-05-2025
+  
   Local Area Network (LAN)
   Star Topology : All devices (computers, phones, etc.) are individually connected to a central networking device — usually a switch or hub.
 All communication between devices goes through this central device.
   Bus Topology : This type of connection relies upon a single connection which is known as a backbone cable.
   The Ring Topology (also known as token topology) : Devices such as computers are connected directly to each other to form a loop.
+
   Switches are dedicated devices within a network that are designed to aggregate multiple other devices such as computers, printers, 
-or any other networking-capable device using ethernet. 
+or any other networking-capable device using ethernet.
+
   Router : It's a router's job to connect networks and pass data between them.
+
   Subnetting means splitting a large network into smaller sections (called subnets).
   What is a Subnet Mask? It shows which part of the IP address is for the network and which is for devices (hosts).
 Examples: /24 = 255.255.255.0 = allows 254 usable devices - /16 = 255.255.0.0 = allows 65,534 usable devices
+
   Network Address
      Identifies the whole network
      Cannot be assigned to a device
@@ -77,57 +102,175 @@ Examples: /24 = 255.255.255.0 = allows 254 usable devices - /16 = 255.255.0.0 = 
      Used to exit the network (to access the internet)
      Like the main door of the building
      Often: 192.168.1.1 or 192.168.1.254
-  ARP is used to map an IP address to a MAC address in a local network. (arp -a)
-It helps devices find out "Who has this IP address?" and get the corresponding MAC address.
-ARP Request > ARP Reply > Caching
+
+  ARP (Address Resolution Protocol) is used to map an IP address to a MAC address in a local network. (arp -a)
+It helps devices find out "Who has this IP address?" and get the corresponding MAC address. ARP Request > ARP Reply > Caching
   DHCP – Dynamic Host Configuration Protocol - DHCP Discover > DHCP Offer > DHCP Request > DHCP ACK
   DNS – Domain Name System - DNS translates domain names into IP addresses.
 
-26-05-2025
+######### 26-05-2025
+
   Ethernet is a networking technology used to connect devices in a local area network (LAN).
 It typically uses cables (like RJ-45) to allow data to be transferred between devices.
-  The OSI model (or Open Systems Interconnection Model) provides a framework dictating how all networked devices
-will send, receive and interpret data. This process is called encapsulation.
+
+  The OSI model (or Open Systems Interconnection Model) provides a framework dictating how all networked devices will send, receive and
+interpret data. This process is called encapsulation.
+
   1-Physical : Devices use electrical signals or radio waves to transfer data between each other in a binary numbering system (1's and 0's).
+  
   2-Data Link : The data link layer focuses on the physical addressing of the transmission. It receives a packet from the network layer
 (including the IP address for the remote computer) and adds in the physical MAC (Media Access Control) address of the receiving endpoint.
 Inside every network-enabled computer is a Network Interface Card (NIC) which comes with a unique MAC address to identify it.
 Additionally, it’s also the job of the data link layer to present the data in a format suitable for transmission.
-  3-Network : The Network Layer is responsible for routing and delivering data across different networks.
-It determines the most efficient path for data to travel using IP addresses. Works with protocols like OSPF and RIP.
-OSPF (Open Shortest Path First) and RIP (Routing Information Protocol).
-Devices like routers operate at this layer (also called Layer 3 devices).
+  
+  3-Network : The Network Layer is responsible for routing and delivering data across different networks. It determines the most efficient
+path for data to travel using IP addresses. Works with protocols like OSPF and RIP.
+OSPF (Open Shortest Path First) and RIP (Routing Information Protocol). Devices like routers operate at this layer.
+(also called Layer 3 devices).
+  
   4-Transport : The Transport Layer is responsible for reliable or fast delivery of data across a network.
 The Transport Layer is responsible for breaking data into segments, delivering it across networks, and reassembling it on the other side.
 It handles reliability, order, and speed of communication between devices.
-TCP – Transmission Control Protocol: Connection-oriented.
-    Ensures data is delivered completely, in order, and without errors.
-    Uses acknowledgements (ACKs) and retransmission if data is lost.
-    Slower but highly reliable.
-Used in:
+  TCP – Transmission Control Protocol: Connection-oriented.
+    Ensures data is delivered completely, in order, and without errors. Uses acknowledgements (ACKs) and retransmission if data is lost.
+Slower but highly reliable. Used in:
 Web traffic (HTTP/HTTPS), Email, File Transfers
-UDP – User Datagram Protocol: Connectionless. Sends data without ensuring delivery or order. Very fast but not reliable.
-Used in:
+  UDP – User Datagram Protocol: Connectionless. Sends data without ensuring delivery or order. Very fast but not reliable. Used in:
 Video/audio streaming, online games, DNS queries
-QUIC – Quick UDP Internet Connections: Developed by Google. Combines UDP's speed with TCP-like reliability.
+  QUIC – Quick UDP Internet Connections: Developed by Google. Combines UDP's speed with TCP-like reliability.
 Built-in encryption and connection management. Basis of HTTP/3. Used in Chrome, YouTube, Google services.
+  
   5-Session :
 Manages creation, maintenance, and termination of communication sessions between devices.
 A session is a temporary connection between two systems for data exchange.
 Responsible for starting, controlling, and ending communication.
 Can include checkpoints: if data is lost, only the latest parts are resent instead of restarting everything.
 Ensures unique sessions – data sent in one session can’t “leak” into another.
+  
   6-Presentation : 
 Acts as a translator or converter for the data.
 Ensures that data sent by one device can be understood by another, even if they use different formats.
 Standardizes data formats between different systems.
 Responsible for data encryption, compression, and formatting.
 Helps translate between application formats like text, images, videos, etc.
+  
   7-Application : 
 The Application Layer is the topmost layer of the OSI model.
 It’s the layer that users interact with directly through software such as browsers, email clients, or FTP programs.
 It defines the protocols and rules that applications use to communicate over a network.
 When you type a website URL into your browser, the HTTP protocol (Application Layer) manages that request.
+
+######### 27-05-2025
+
+  What are Packets and Frames?
+  Packets and frames are small pieces of data that, when forming together, make a larger piece of information or message.
+However, they are two different things in the OSI model. A frame is at layer 2 - the data link layer, meaning there is no such information
+as IP addresses. Think of this as putting an envelope within an envelope and sending it away. The first envelope will be the packet that
+you mail, but once it is opened, the envelope within still exists and contains data (this is a frame). (IP - Yes/No)
+  Header	     -                Description
+Time to Live - This field sets an expiry timer for the packet to not clog up your network if it never manages to reach a host or escape!
+Checksum - This field provides integrity checking for protocols such as TCP/IP. If any data is changed, this value will be different from
+what was expected and therefore corrupt.
+Source Address	- The IP address of the device that the packet is being sent from so that data knows where to return to.
+Destination Address - The device's IP address the packet is being sent to so that data knows where to travel next.
+
+  TCP (Transmission Control Protocol) is a connection-oriented protocol used in networking. It ensures reliable and ordered delivery of
+data between devices. TCP/IP is a simplified model similar to the OSI model. It has four layers:
+    Application
+    Transport
+    Internet
+    Network Interface
+
+Key Features:
+    TCP uses a Three-Way Handshake to establish a connection before sending data.
+    Each data packet includes a header with important control information.
+    The process of adding headers is called encapsulation; removing them is decapsulation.
+TCP Header Fields:
+    Source Port / Destination Port – Sender and receiver port numbers
+    Source IP / Destination IP – Sender and receiver IP addresses
+    Sequence Number – Keeps track of the order of data
+    Acknowledgement Number – Confirms receipt of data
+    Checksum – Verifies data integrity
+    Data – The actual payload being sent
+    Flags – Controls how the connection is managed (e.g., SYN, ACK, FIN)
+Three-Way Handshake Steps:
+    SYN – Client sends a connection request
+    SYN/ACK – Server acknowledges and agrees
+    ACK – Client confirms and connection is established
+  After that, data (e.g., file contents) can be transferred.
+Connection Termination:
+    The connection is closed cleanly using FIN → ACK exchange from both sides.
+    If an error occurs, RST is used to abruptly terminate the session.
+
+  UDP is a stateless transport protocol.
+It allows data to be sent between two devices without establishing a connection or synchronizing them.  
+  UDP is used when:
+    Speed is more important than reliability
+    Some data loss is acceptable (e.g., live streams, VoIP)
+  Advantages:
+    Faster than TCP
+    No connection setup required
+    Lower overhead (fewer headers)
+    Leaves timing control to the application layer
+  Disadvantages:
+    No delivery guarantee
+    No error checking or retransmission
+    Bad on unstable connections
+    Packets may arrive out of order or be dropped
+  UDP Packet Headers:
+    TTL: Prevents packets from looping forever
+    Source & Destination Address – IP info
+    Source & Destination Port – Port numbers
+    Data: Payload of the packet
+  Key Concept:
+    Unlike TCP, UDP does not use a handshake or acknowledgements.
+    It simply sends data – whether it arrives or not, it doesn't care.
+
+  Ports 101 – Understanding Port Numbers
+Ports are numerical identifiers used to direct traffic to the correct application on a device.
+Think of ports like harbor docking points: ships (data) can only dock where the port fits their purpose.
+Each port is a number between 0 and 65535. Ports allow operating systems to keep track of which data belongs to which application.
+  Why Are They Important?
+    Applications use specific port numbers to communicate.
+    Without consistent port assignments, data confusion and failure can happen.
+    For example, web browsers use port 80 by default for HTTP.
+
+  Common Port Numbers and Protocols: (https://www.vmaxx.net/techinfo/ports.htm)
+Protocol	                 Port	                       Use
+FTP (File Transfer Protocol)	21	File transfers from a central server
+SSH (Secure Shell)	22	Secure command-line access to remote systems
+HTTP (HyperText Transfer Protocol)	80	Unsecured web traffic
+HTTPS (Secure HTTP)	443	Encrypted web traffic
+SMB (Server Message Block)	445	File and printer sharing across a network
+RDP (Remote Desktop Protocol)	3389	Remote desktop access with GUI
+  Ports 0–1023 are known as common ports or well-known ports.
+  Services can use non-standard ports (e.g., HTTP on port 8080), but must be specified like http://example.com:8080.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
