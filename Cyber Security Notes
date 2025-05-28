@@ -254,10 +254,72 @@ Summary:
     Ports are like the service-specific addresses attached to an IP.
     Without knowing the correct port, the device won’t know which application should handle your request.
 
+######### 28-05-2025
 
+Port forwarding is a router configuration that allows external devices (from the internet) to access services hosted inside a private network.
+It is set up inside the router/modem settings.
+The router listens on a public IP and a specific port (e.g., 82.62.51.70:80)
+and forwards the request to a local IP and port (e.g., 192.168.1.10:80).
+Example:
+    Public IP: 82.62.51.70
+    Local Server IP: 192.168.1.10
+    Service Port: 80 (HTTP)
+ Incoming request to 82.62.51.70:80
+ is forwarded to 192.168.1.10:80 inside the network.
+Why use Port Forwarding?
+    To host a website/server/game from home
+    To allow access to SSH, HTTP, FTP etc. remotely
+    To make a local service publicly accessible
+Things to remember:
+    The local device should have a static IP
+    The port must be open and listening
+    Firewalls must allow the connection
+Summary:
+    Port Forwarding = Public IP + Port → Forward → Private IP + Port
 
+A firewall is a device or software in a network that permits or denies traffic based on set rules.
+Think of it as a security guard deciding who gets in and who doesn't.
+Factors firewalls consider:
+    Where the traffic is coming from (source IP or network)
+    Where the traffic is going to (destination IP or network)
+    What port is used (e.g. port 80 = web traffic)
+    What protocol is used (TCP, UDP, etc.)
+They inspect packets and decide to allow or block based on these.
+Two Main Types of Firewalls:
+Type	Description
+Stateful	Tracks the entire connection, not just one packet. Smart, dynamic, and uses more resources. Blocks full sessions if needed.
+Stateless	Checks each packet individually. Uses fewer resources but is simpler. Good for handling large attacks (like DDoS).
 
+VPN (Virtual Private Network):
+A VPN creates a secure "tunnel" over the internet, allowing devices in different physical locations to act like they're on the same private network.
+Main Benefits:
+- Connects networks across locations
+- Encrypts traffic (offers privacy)
+- Hides your identity (offers anonymity)
+VPN Protocols:
+- PPP: Provides authentication & encryption, cannot leave network alone.
+- PPTP: Sends PPP data over internet, easy but weak.
+- IPSec: Strong encryption using IP framework, harder to configure.
 
+Router
+    A router connects different networks and decides the best path for data to travel.
+    Operates at Layer 3 (Network layer) of the OSI model.
+  Factors routers consider:
+        Which path is shortest?
+        Which is most reliable?
+        Which uses faster medium (e.g. fiber)?
+        Verb: A router routes data.
+Switch
+    A switch connects multiple devices within the same network.
+    Forwards data based on MAC addresses.
+    Works mainly at Layer 2, but some advanced switches can also work at Layer 3.
+Two types of switches:
+    Layer 2 Switch (uses MAC)
+    Layer 3 Switch (uses IP + MAC, does routing too)
+VLAN (Virtual LAN)
+    A VLAN separates devices logically, even if they're physically on the same switch.
+    Example: Sales department and Accounting department can’t talk to each other, even if they're on the same physical switch.
+    VLANs increase security and traffic organization.
 
 
 
