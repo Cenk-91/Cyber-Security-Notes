@@ -64,8 +64,10 @@ Example: netstat -tuln shows all TCP/UDP ports that are open for listening.
 The "whoami" command prints the username of the current user.
 Useful to verify if you have root privileges or are in a standard session.
 
+######### 28-05-2025
 
-
+The "who" command displays a list of users currently logged into the system.
+The "uptime" command shows how long the system has been running since the last reboot.
 
 
 
