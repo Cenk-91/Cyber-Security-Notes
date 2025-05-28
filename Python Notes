@@ -88,6 +88,33 @@ name = "Cenk" stores a string.
 name = input("What's your name? ")
 print("Hey", name)
 
+######### 28-05-2025
+
+# int() function converts a value to an integer type (whole number).
+num = int("42")    # string → int
+print(num + 1)     # Output: 43
+
+# str() function converts a value to a string type.
+age = 33
+message = "Age: " + str(age)
+print(message)     # Output: Age: 33
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
