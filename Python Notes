@@ -99,6 +99,27 @@ age = 33
 message = "Age: " + str(age)
 print(message)     # Output: Age: 33
 
+######### 29-05-2025
+
+# Converting input to integer using int()
+# Ask for two numbers from the user and add them
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+total = num1 + num2
+print("The total is:", total)
+# input() always returns a string, even if the user types a number.
+# You must convert it using int() or float() before doing math operations.
+
+# if statement – basic conditional logic
+# Ask the user's age and respond based on the input
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are an adult!")
+else:
+    print("You are not an adult.")
+if is used to check a condition.
+If the condition is True, the block under if runs.
+If the condition is False, the else block runs.
 
 
 
