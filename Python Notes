@@ -75,9 +75,9 @@ person = {
     "city": "Ankara"
 }
 print(person["name"])      # Output: Cenk
-person.keys()      # Tüm anahtarları döndürür
-person.values()    # Tüm değerleri döndürür
-person.items()     # (anahtar, değer) çiftlerini döndürür
+person.keys()      # All the keys
+person.values()    # All the values
+person.items()     # All the keys and values
 
 ######### 27-05-2025
 
