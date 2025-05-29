@@ -71,11 +71,11 @@ The "uptime" command shows how long the system has been running since the last r
 
 ######### 29-05-2025
 
-  uname -a
+  uname -a (Unix name all)
 Displays system information: kernel name, network node hostname, kernel release, version, machine hardware name, processor type, and more.
 Useful for checking your OS version and architecture.
 
-  df -h
+  df -h (Disk free human-readable)
 Shows disk space usage of all mounted filesystems in a human-readable format (e.g., GB/MB).
 Helps monitor storage space, especially in /home, /, or /var.
 
