@@ -69,6 +69,16 @@ Useful to verify if you have root privileges or are in a standard session.
 The "who" command displays a list of users currently logged into the system.
 The "uptime" command shows how long the system has been running since the last reboot.
 
+######### 29-05-2025
+
+  uname -a
+Displays system information: kernel name, network node hostname, kernel release, version, machine hardware name, processor type, and more.
+Useful for checking your OS version and architecture.
+
+  df -h
+Shows disk space usage of all mounted filesystems in a human-readable format (e.g., GB/MB).
+Helps monitor storage space, especially in /home, /, or /var.
+
 
 
 
