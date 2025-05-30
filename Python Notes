@@ -121,11 +121,18 @@ if is used to check a condition.
 If the condition is True, the block under if runs.
 If the condition is False, the else block runs.
 
+######### 30-05-2025
 
+# None ~ Represents the absence of a value. The data type is NoneType.
+x = None
+print(x)            # Output: None
+print(type(x))      # <class 'NoneType'>
 
-
-
-
+# type casting ~ The process of converting one data type into another (e.g. string to int).
+int("123")      # string → int
+float("3.14")   # string → float
+str(42)         # int → string
+bool(0)         # 0 → False, others → True
 
 
 
