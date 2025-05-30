@@ -326,6 +326,485 @@ VLAN (Virtual LAN)
 
 ######### 30-05-2025
 
+DNS (Domain Name System) provides a simple way for us to communicate with devices on the internet without remembering complex numbers. 
+
+Domain Hierarchy (DNS Structure)
+Root Domain
+Represented as a dot . (invisible in browsers)
+The top of the DNS hierarchy
+Example: tryhackme.com is technically tryhackme.com.
+
+Top-Level Domain (TLD)
+The rightmost part of a domain name
+Examples: .com, .org, .edu, .gov, .mil, .uk
+TLD Types:
+gTLD (Generic): .com, .org, .edu, etc.
+ccTLD (Country Code): .uk, .de, .tr, etc.
+There are over 2000 TLDs today, including .tech, .club, .shop, etc.
+
+Second-Level Domain
+Comes before the TLD
+Example: tryhackme.com → "tryhackme" is the second-level domain
+Restrictions:
+Up to 63 characters
+Only a–z, 0–9, and hyphens (-)
+Cannot start/end with a hyphen or have double hyphens
+
+Subdomain
+Comes before the second-level domain, separated by a dot
+Example: admin.tryhackme.com → subdomain = admin
+Facts:
+Same character rules as 2nd level
+Up to 253 characters
+You can have multiple levels (e.g., jupiter.servers.tryhackme.com)
+No limit to how many subdomains you create
+
+DNS Record Types
+A Record
+Resolves a domain name to an IPv4 address.
+Example: 104.26.10.229
+Most common record type for basic website access.
+
+AAAA Record
+Resolves to an IPv6 address.
+Example: 2606:4700:20::681a:be5
+“Four A’s” → For longer IPs.
+
+CNAME Record (Canonical Name)
+Points one domain to another domain.
+Example:
+store.tryhackme.com → CNAME → shops.shopify.com
+Useful for aliasing subdomains to services.
+
+MX Record (Mail Exchange)
+Specifies mail servers for the domain.
+Comes with a priority flag to set backup servers.
+Example:
+tryhackme.com → alt1.aspmx.l.google.com
+
+TXT Record
+Holds free text-based data.
+Uses:
+Email security (SPF, DKIM)
+Domain ownership verification
+Third-party service authentication
+
+DNS Request Process
+What happens when you type a domain name into your browser? This is the DNS resolution journey!
+
+1. Local Cache Check
+Your computer first checks its local cache to see if the domain has been resolved before.
+If yes → use it.
+If no → move to Recursive DNS Server.
+
+2. Recursive DNS Server
+Usually provided by your ISP or can be custom (e.g. Google DNS 8.8.8.8).
+It checks its own cache.
+If cached → returns IP address
+If not → starts querying the internet starting with Root DNS Server
+
+3. Root DNS Server
+Acts as the backbone of DNS.
+It identifies the correct TLD server based on the domain suffix (e.g. .com, .org, .uk), and refers the query there.
+
+4. TLD (Top-Level Domain) Server
+This server holds records pointing to the Authoritative DNS Server for that domain.
+Example: For tryhackme.com, it may return kip.ns.cloudflare.com as the authoritative name server.
+
+5. Authoritative DNS Server
+This is the final stop. It stores the actual DNS records (A, CNAME, MX, etc.) for the domain.
+It responds with the final answer, which is sent back to:
+Recursive DNS Server
+Your system
+Your browser
+
+TTL (Time To Live)
+Every DNS response includes a TTL.
+It tells how long the response can be cached before a new lookup is required.
+Caching saves time and reduces DNS traffic.
+
+HTTP (HyperText Transfer Protocol)
+HTTP is the set of rules used to communicate with web servers.
+It is how webpage data (HTML, images, videos, etc.) is sent and received between your browser and a website.
+Developed by Tim Berners-Lee between 1989–1991.
+
+HTTPS (HyperText Transfer Protocol Secure)
+HTTPS is the secure version of HTTP.
+All data transferred is encrypted, meaning:
+Hackers cannot see what you send or receive
+You are really connected to the correct server, not an impersonator
+Extra Tip: HTTPS uses TLS (Transport Layer Security) to encrypt the connection. SSL is outdated.
+
+What is a URL? (Uniform Resource Locator)
+A URL tells the browser how and where to access a resource on the internet. A full URL can include:
+
+http://user:password@tryhackme.com:80/view-room?id=1#task3
+URL Breakdown:
+
+Part	Meaning
+Scheme	Protocol to use → http, https, ftp
+User	Optional login credentials
+Host	Domain name or IP address of the server
+Port	Connection port (default: 80 for HTTP, 443 for HTTPS)
+Path	Resource location on the server (like /view-room)
+Query String	Additional data sent in the URL (e.g., ?id=1)
+Fragment	Jump to a specific section on the page (e.g., #task3)
+
+Making an HTTP Request
+An HTTP request line looks like:
+GET / HTTP/1.1
+3 Main Parts:
+Request Method: e.g., GET, POST, PUT, DELETE
+Requested Path: the page you want to access (e.g., /)
+Protocol Version: e.g., HTTP/1.1, HTTP/2
+
+Example HTTP Request
+GET / HTTP/1.1
+Host: tryhackme.com
+User-Agent: Mozilla/5.0 Firefox/87.0
+Referer: https://tryhackme.com/
+ Explanation by Line:
+Line 1: GET request for the homepage using HTTP/1.1
+Line 2: Tells the server which domain is being requested
+Line 3: User-Agent = browser + version
+Line 4: Referer = where the user came from
+Line 5: Ends with a blank line = end of request
+
+HTTP Response Example
+HTTP/1.1 200 OK
+Server: nginx/1.15.8
+Date: Fri, 09 Apr 2021 13:34:03 GMT
+Content-Type: text/html
+Content-Length: 98
+
+<html>
+<head><title>TryHackMe</title></head>
+<body>Welcome To TryHackMe.com</body>
+</html>
+ Explanation by Line:
+Line 1: Protocol version + Status Code (200 OK)
+Line 2: Web server info (nginx/1.15.8)
+Line 3: Server's current date and time
+Line 4: Type of content (text/html, image/png, application/json, etc.)
+Line 5: Length of the content in bytes
+Line 6: Blank line = end of headers
+Line 7–X: Actual response content (HTML in this case)
+
+ Status Codes Reminder:
+Code	Meaning
+200	OK (Success)
+301	Moved Permanently
+403	Forbidden
+404	Not Found
+500	Server Error
+
+HTTP Methods
+GET
+Used to retrieve information from a web server.
+It doesn’t change anything on the server.
+Example: Viewing a blog post or a public profile.
+
+POST
+Used to send data to the web server.
+Commonly used to create new records.
+Example: Registering a new user account, submitting a form.
+
+PUT
+Used to update existing data on the web server.
+Example: Updating your email address or profile info.
+
+DELETE
+Used to remove information from the web server.
+Example: Deleting a post or account.
+
+HTTP Status Codes
+Status Code Ranges:
+Code Range	Meaning
+100–199	Informational: Request accepted, continue (rare today)
+200–299	Success: Request was successful
+300–399	Redirection: Client is redirected elsewhere
+400–499	Client Errors: Problem from the client's side
+500–599	Server Errors: Problem on the server side
+
+Common Status Codes
+Code	Meaning
+200 OK	Everything went well
+201 Created	A new resource (e.g., user/blog post) was created
+301 Moved Permanently	Page has moved, use new address
+302 Found	Temporary redirect
+400 Bad Request	Client sent something invalid or incomplete
+401 Not Authorised	Not logged in or missing credentials
+403 Forbidden	Logged in, but not allowed to view resource
+404 Not Found	Page/resource doesn’t exist
+405 Method Not Allowed	Wrong request method used (e.g., GET instead of POST)
+500 Internal Server Error	Server had a problem it couldn’t handle
+503 Service Unavailable	Server is down or overloaded
+
+HTTP Headers
+Headers = extra info sent with HTTP requests or responses.
+They’re not required… but super important for modern websites!
+
+Common Request Headers
+(Sent from browser to server)
+Header	Description
+Host	Tells the server which domain you want (in case it hosts multiple sites)
+User-Agent	Tells server your browser and version, so it can format content correctly
+Content-Length	Indicates the size of the data being sent (e.g., form data)
+Accept-Encoding	Tells the server which compression types your browser supports (gzip, deflate, etc.)
+Cookie	Sends saved cookies (session info, login, preferences) to the server
+
+Common Response Headers
+(Sent from server to browser)
+Header	Description
+Set-Cookie	Tells browser to store a cookie (e.g., session ID)
+Cache-Control	Controls how long the browser should cache the response
+Content-Type	Describes the type of content (HTML, CSS, JSON, images, etc.)
+Content-Encoding	Tells which compression method was used (gzip, br, etc.)
+
+Simple Example:
+When you visit a site, your browser says:
+“Hey, I’m Firefox 87 (User-Agent), I want this host (Host), I accept gzip (Accept-Encoding)...”
+Then the server replies:
+“Cool, here’s some HTML (Content-Type: text/html), compressed with gzip (Content-Encoding), and save this cookie.”
+
+Bonus: These headers also help with performance, security, caching, and user session management.
+
+What is a Cookie?
+A cookie is a small piece of data stored on your computer by a website.
+It is saved when a server sends a Set-Cookie header in an HTTP response.
+Every future request to that website includes the cookie data automatically.
+This helps identify users, remember preferences, or maintain login sessions.
+
+Why Are Cookies Needed?
+Because HTTP is stateless — it doesn't remember previous requests.
+Cookies allow the server to recognize returning users or keep track of who you are.
+
+Example Cookie Exchange (Step-by-Step)
+Client requests a webpage:
+→ GET / HTTP/1.1
+Server responds with a form (e.g., asking for your name)
+Client sends form back:
+→ POST / with name=adam
+Server replies with a cookie:
+→ Set-Cookie: name=adam
+Next time, browser includes cookie in the request:
+→ Cookie: name=adam
+Server reads the cookie and responds differently:
+→ Example: Displays "Welcome back, Adam" instead of the form
+
+Use Cases for Cookies:
+Authentication (e.g., staying logged in)
+Remembering preferences
+Tracking returning visitors
+Often stores a token, not raw credentials
+
+Viewing Cookies in Browser:
+Open DevTools (F12)
+Go to Network tab
+Click on a request
+Check the Cookies section to see sent or received cookies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
