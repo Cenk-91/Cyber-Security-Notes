@@ -79,6 +79,36 @@ Useful for checking your OS version and architecture.
 Shows disk space usage of all mounted filesystems in a human-readable format (e.g., GB/MB).
 Helps monitor storage space, especially in /home, /, or /var.
 
+######### 30-05-2025
+
+cp ~ Used to copy files or directories. e.g. cp source.txt target.txt
+cp -r ~ copies a folder
+
+clear or ctrl + l ~ clears the terminal screen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
