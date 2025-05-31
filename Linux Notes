@@ -86,11 +86,16 @@ cp -r ~ copies a folder
 
 clear or ctrl + l ~ clears the terminal screen
 
+######### 31-05-2025
 
+echo | Used to display a line of text or variable value in the terminal. Often used in shell scripts and for writing to files.
+echo "Merhaba Cenk!"
+echo "Deneme" > dosya.txt (Creates a new file and writes "Deneme" into it (overwrites if it already exists — be careful!.))
+echo "Yeni satır" >> dosya.txt (Appends "Yeni satır" to the end of the existing file without overwriting it.)
 
-
-
-
+cat | Displays the content of files in the terminal. Can also be used to concatenate multiple files or create new ones.
+cat dosya.txt Displays the contents of the file named dosya.txt in the terminal.
+cat dosya1.txt dosya2.txt > birlesik.txt Combines two files and writes them into a new file named birlesik.txt.
 
 
 
