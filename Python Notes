@@ -134,9 +134,21 @@ float("3.14")   # string → float
 str(42)         # int → string
 bool(0)         # 0 → False, others → True
 
+######### 31-05-2025
 
+# The bool() function converts a value to a boolean (True or False).
+# Common rules: 0, 0.0, "", [], (), {}, None → False. Everything else → True.
+print(bool(0))        # Output: False
+print(bool("Hi"))     # Output: True
+print(bool([]))       # Output: False
+print(bool([1, 2]))   # Output: True
 
-
+# The pass statement is a placeholder that does nothing.
+# It's useful when a statement is syntactically required but no action is needed yet.
+if True:
+    pass  # Do nothing for now
+else:
+    print("This won't run")
 
 
 
