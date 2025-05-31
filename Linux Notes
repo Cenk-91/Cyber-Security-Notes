@@ -96,7 +96,8 @@ echo "Yeni satır" >> dosya.txt (Appends "Yeni satır" to the end of the existin
 cat | Displays the content of files in the terminal. Can also be used to concatenate multiple files or create new ones.
 cat dosya.txt Displays the contents of the file named dosya.txt in the terminal.
 cat dosya1.txt dosya2.txt > birlesik.txt Combines two files and writes them into a new file named birlesik.txt.
-
+concatenate(v.) to link or combine things together in a series or chain. The cat command was originally designed to concatenate (link together) multiple files.
+Today, it is commonly used to display the content of files, but it still carries its original name.
 
 
 
