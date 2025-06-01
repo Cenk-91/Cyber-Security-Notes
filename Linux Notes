@@ -99,10 +99,23 @@ cat dosya1.txt dosya2.txt > birlesik.txt Combines two files and writes them into
 concatenate(v.) to link or combine things together in a series or chain. The cat command was originally designed to concatenate (link together) multiple files.
 Today, it is commonly used to display the content of files, but it still carries its original name.
 
+######### 01-06-2025
 
+history | Displays the history of previously entered terminal commands.
+Ex. !25 - history -c
 
+grep | Searches for a string or pattern in text or command output. (Global Regular Expression Print)
 
+grep "Cenk" notes.txt
+Shows the lines in notes.txt that contain the word "Cenk".
 
+ps aux | grep firefox
+Filters and displays running processes that include the word "firefox".
+
+grep -i "lina" logs.txt
+Searches for "lina" in logs.txt, ignoring case (matches "LINA", "Lina", etc.).
+
+######### 02-06-2025
 
 
 
