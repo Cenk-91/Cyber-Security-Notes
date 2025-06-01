@@ -754,6 +754,20 @@ Backend Languages
 Used for dynamic content and interactivity.
 Examples: PHP, Python, NodeJS, Ruby, Perl
 
+WEBSITE EXAMPLE:
+
+Request tryhackme.com in your browser
+Check Local Cache for IP Address
+Check your recursive DNS Server for Address
+Query root server to find authoritative DNS Server
+Authoritative DNS server advises the IP address for the website
+Request passes through a Web Application Firewall
+Request passes through a Load Balancer
+Connect to Webserver on port 80 or 443
+Web server receives the GET request
+Web Application talks to Database
+Your Browser renders the HTML into a viewable website
+
 ######### 02-06-2025
 
 
