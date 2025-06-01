@@ -702,6 +702,73 @@ function sayHi() {
     Risk: <h1>, <script>, etc. will work if not filtered.
     Solution: Always sanitize user input before inserting it into HTML/JS.
 
+######### 01-06-2025
+
+Steps when you access a website:
+Browser sends request to visit a site.
+DNS resolves the domain to an IP address.
+Your computer connects to the web server.
+Uses HTTP protocol to talk to the server.
+Server sends HTML, CSS, JS, images, etc.
+Browser renders the page for you.
+  This entire flow makes websites work behind the scenes.
+
+Load Balancer
+Distributes traffic to multiple servers.
+Uses algorithms like:
+Round-robin – sends requests in order.
+Weighted – sends to least busy server.
+Performs health checks on servers.
+
+CDN (Content Delivery Network)
+Hosts static files (JS, CSS, images, videos) on global servers.
+Delivers from nearest location to reduce latency.
+
+Databases
+Store and retrieve user data.
+Examples: MySQL, MongoDB, PostgreSQL, MSSQL, etc.
+
+WAF (Web Application Firewall)
+Filters and inspects requests before reaching server.
+Blocks suspicious or high-volume requests (e.g. bots, attacks).
+Implements rate limiting and attack detection.
+
+What is a Web Server?
+Software that handles incoming HTTP requests and delivers content.
+Examples: Apache, Nginx, IIS, NodeJS
+Serves files from a root directory (e.g., /var/www/html)
+
+Virtual Hosts
+Allow multiple domains on a single server.
+Direct traffic based on hostname.
+Example:
+one.com → /var/www/website_one
+two.com → /var/www/website_two
+
+Static vs. Dynamic Content
+Static: Files that never change (HTML, CSS, images).
+Dynamic: Content changes based on data or user input.
+Dynamic content is created by the Backend and shown by the Frontend.
+
+Backend Languages
+Used for dynamic content and interactivity.
+Examples: PHP, Python, NodeJS, Ruby, Perl
+
+######### 02-06-2025
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
