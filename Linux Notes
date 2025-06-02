@@ -117,10 +117,20 @@ Searches for "lina" in logs.txt, ignoring case (matches "LINA", "Lina", etc.).
 
 ######### 02-06-2025
 
+find ; find -name passwords.txt / find -name *.txt
 
+wc – Shows line, word, and byte count of a file.
+wc filename.txt
+wc -l – Shows only the number of lines in a file or output.
+wc -l filename.txt
+Can be piped with other commands:
+grep "python" notes.txt | wc -l
 
-
-
+Symbol / Operator    -  	Description
+&	         This operator allows you to run commands in the background of your terminal.
+&&	       This operator allows you to combine multiple commands together in one line of your terminal.
+>	         This operator is a redirector - meaning that we can take the output from a command (such as using cat to output a file) and direct it elsewhere.
+>>	       This operator does the same function of the > operator but appends the output rather than replacing (meaning nothing is overwritten).
 
 
 
