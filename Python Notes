@@ -156,12 +156,31 @@ PRACTICE DAY!
 
 ######### 02-06-2025
 
-PRACTICE DAY!
+OFF DAY!
 
 ######### 03-06-2025
 
+# elif keyword – Multiple Conditions
 
+age = int(input("Enter your age: "))
 
+if age < 13:
+    print("Child")
+elif age < 20:
+    print("Teenager")
+else:
+    print("Adult")
+
+# elif stands for "else if". It lets you check multiple conditions in sequence.
+
+in operator – Membership Test
+
+fruits = ["apple", "banana", "cherry"]
+
+if "banana" in fruits:
+    print("Yes, banana is in the list!")
+
+# in checks if a value exists inside a list, string, or other iterable.
 
 
 
