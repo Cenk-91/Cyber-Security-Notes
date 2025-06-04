@@ -182,7 +182,22 @@ if "banana" in fruits:
 
 # in checks if a value exists inside a list, string, or other iterable.
 
+######### 04-06-2025
 
+ + (Addition Operator)
+Used to add two numbers or concatenate strings.
+
+# Numbers
+a = 5 + 3      # 8
+
+# Strings
+greeting = "Hello, " + "Cenk!"  # "Hello, Cenk!"
+
+ - (Subtraction Operator)
+Used to subtract one number from another.
+
+x = 10 - 4     # 6
+Note: These operators work only on compatible types (e.g., you can't subtract strings).
 
 
 
